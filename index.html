@@ -78,6 +78,28 @@
     #about p {
       margin: 0;
     }
+    .about-body {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+    .headshot {
+      flex: 0 0 220px;
+      width: 220px;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .about-body {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .headshot {
+        flex: none;
+        width: 100%;
+        max-width: 280px;
+      }
+    }
     .contact-box {
       border: 2px solid var(--red);
       padding: 28px 24px 32px;
@@ -118,7 +140,10 @@
 
     <section id="about">
       <h2 class="label">About</h2>
-      <p>I'm a reporter covering politics at The Washington Sun. I previously worked as an investigative reporter at the Marietta Daily Journal in my home state of Georgia. I studied international affairs at the University of Georgia, where I served as editor-in-chief of The Red &amp; Black, the student newspaper.</p>
+      <div class="about-body">
+        <img class="headshot" src="images/headshot.jpg" alt="Hunter Riggall" width="800" height="1200">
+        <p>I'm a reporter covering politics at The Washington Sun. I previously worked as an investigative reporter at the Marietta Daily Journal in my home state of Georgia. I studied international affairs at the University of Georgia, where I served as editor-in-chief of The Red &amp; Black, the student newspaper.</p>
+      </div>
     </section>
 
     <section id="clips">
