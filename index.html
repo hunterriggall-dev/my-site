@@ -100,6 +100,48 @@
         max-width: 280px;
       }
     }
+    .clip-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .clip {
+      padding: 20px 0;
+      border-bottom: 2px dotted var(--muted);
+    }
+    .clip:first-child {
+      padding-top: 0;
+    }
+    .clip-outlet {
+      font-family: var(--label);
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      color: var(--red);
+      margin: 0 0 6px;
+    }
+    .clip-headline {
+      font-family: var(--masthead);
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin: 0 0 8px;
+    }
+    .clip-headline a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .clip-headline a:hover {
+      text-decoration: underline;
+    }
+    .clip-date {
+      font-family: var(--byline);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.85rem;
+      margin: 0;
+    }
     .contact-box {
       border: 2px solid var(--red);
       padding: 28px 24px 32px;
@@ -148,7 +190,9 @@
 
     <section id="clips">
       <h2 class="label">Clips</h2>
-      <!-- CLIPS GO HERE: headline, outlet and date for each story -->
+      <ul class="clip-list">
+        <!-- CLIPS: newest first. The add-clip skill inserts each new clip directly below this line. -->
+      </ul>
     </section>
 
     <section id="contact" class="contact-box">
