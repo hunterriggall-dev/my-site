@@ -17,16 +17,61 @@
       max-width: 680px;
       margin: 0 auto;
     }
+    header {
+      margin-bottom: 40px;
+    }
     h1 {
       font-size: 2.5rem;
-      margin: 0 0 24px;
+      margin: 0;
       font-weight: normal;
+    }
+    .beat {
+      font-size: 1.2rem;
+      color: #555555;
+      margin: 4px 0 0;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 6px;
+      margin: 0 0 16px;
+    }
+    .placeholder {
+      color: #888888;
+      font-style: italic;
+    }
+    a {
+      color: #1a4d8f;
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>Hunter Riggall</h1>
+    <header>
+      <h1>Hunter Riggall</h1>
+      <p class="beat">Reporting fellow covering politics</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <!-- ABOUT TEXT GOES HERE: waiting for Hunter's text -->
+      <p class="placeholder">[About text coming soon]</p>
+    </section>
+
+    <section id="clips">
+      <h2>Clips</h2>
+      <!-- CLIPS GO HERE: headline, outlet and date for each story -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach me at <a href="mailto:hunterriggall@washsun.com">hunterriggall@washsun.com</a> or via Signal at hriggall.04.</p>
+    </section>
   </main>
 </body>
 </html>
